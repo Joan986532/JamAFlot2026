@@ -18,7 +18,10 @@ height = 1.75
 script = ExtResource("1_53v7d")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=9972262]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35403794, -0.3600192)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35403794, -0.028334916)
+
+[node name="InteractRay" type="RayCast3D" parent="Camera3D" unique_id=564682307]
+transform = Transform3D(1, 0, 0, 0, 0.0014835154, -0.9999989, 0, 0.9999989, 0.0014835154, 0.0007184744, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=637067866]
 mesh = SubResource("CapsuleMesh_0kroj")
