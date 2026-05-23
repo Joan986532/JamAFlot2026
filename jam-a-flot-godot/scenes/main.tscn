@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://c75jspcl0bnvr"]
 
 [ext_resource type="PackedScene" uid="uid://b3p2m0dswt7ss" path="res://scenes/room.tscn" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://ddxw0rnyxe6b7" path="res://scenes/main.gd" id="1_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://ce4vjqselp5eq" path="res://scenes/game_manager.tscn" id="1_tefeu"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_tbgi4"]
+[ext_resource type="PackedScene" path="res://scenes/game_manager.tscn" id="1_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b6vjg25xr4k6c" path="res://scenes/character.tscn" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://dwdcumhf4icr7" path="res://scenes/door.tscn" id="2_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://cubkdlmiotlu8" path="res://scenes/static_object.tscn" id="3_sugp2"]
-[ext_resource type="PackedScene" uid="uid://b72x6grkqaaoa" path="res://scenes/corridor.tscn" id="3_tefeu"]
+[ext_resource type="PackedScene" path="res://scenes/corridor.tscn" id="3_tefeu"]
 [ext_resource type="PackedScene" uid="uid://caa7c1rr8w5qa" path="res://scenes/cube.tscn" id="4_jyhfs"]
-[ext_resource type="PackedScene" uid="uid://bdy600fx4bjx5" path="res://scenes/receptacle.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" path="res://scenes/receptacle.tscn" id="5_tbgi4"]
 
 [node name="Node3D" type="Node3D" unique_id=523509601]
 script = ExtResource("1_tbgi4")
@@ -21,8 +22,20 @@ shadow_enabled = true
 
 [node name="Room" parent="." unique_id=463186992 instance=ExtResource("1_0wfyh")]
 
+[node name="door" parent="Room" unique_id=1535484363 instance=ExtResource("2_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9647756, -0.40830404, 0.6752944)
+
+[node name="door2" parent="Room" unique_id=1667558292 instance=ExtResource("2_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9759035, -0.40881935, 0.68271583)
+
 [node name="Room2" parent="." unique_id=500258555 instance=ExtResource("1_0wfyh")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -20.587929)
+
+[node name="door" parent="Room2" unique_id=2032579001 instance=ExtResource("2_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9814994, -0.40587285, 0.6691017)
+
+[node name="door2" parent="Room2" unique_id=377712990 instance=ExtResource("2_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0109563, -0.40317005, 0.6725941)
 
 [node name="Corridor" parent="." unique_id=1088568126 instance=ExtResource("3_tefeu")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -10.288575)
