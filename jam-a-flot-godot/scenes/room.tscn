@@ -42,7 +42,7 @@ size = Vector3(0.25, 3, 2)
 [sub_resource type="BoxShape3D" id="BoxShape3D_eom3m"]
 size = Vector3(15, 3, 1)
 
-[node name="Main" type="Node" unique_id=2124256174]
+[node name="Main" type="Node3D" unique_id=463186992]
 
 [node name="Ground" type="StaticBody3D" parent="." unique_id=1078488154]
 
