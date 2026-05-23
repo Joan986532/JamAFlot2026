@@ -5,10 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://b6vjg25xr4k6c" path="res://scenes/character.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://cubkdlmiotlu8" path="res://scenes/static_object.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://caa7c1rr8w5qa" path="res://scenes/cube.tscn" id="4_jyhfs"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://bdy600fx4bjx5" path="res://scenes/receptacle.tscn" id="5_tbgi4"]
-=======
->>>>>>> d645ade676f6f5ea72899c606d83a42e9f9e268b
 
 [node name="Node3D" type="Node3D" unique_id=523509601]
 
@@ -31,7 +28,6 @@ transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, -1.371, 1, 2)
 transform = Transform3D(1.2, 0, 0, 0, 1, 0, 0, 0, 0.8, 2, 0.5, -1)
 
 [node name="RigidBody3D" parent="." unique_id=1282383468 instance=ExtResource("4_jyhfs")]
-<<<<<<< HEAD
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8584161, 1.5, -0.95770776)
 
 [node name="Area3D" parent="." unique_id=303234696 instance=ExtResource("5_tbgi4")]
@@ -39,6 +35,3 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.9900043, 0.870133, -1.5141
 
 [node name="RigidBody3D2" parent="." unique_id=256976419 instance=ExtResource("4_jyhfs")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.8723707, 0.6438718, 1.1188852)
-=======
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.811064, 1.2994714, -0.9758023)
->>>>>>> d645ade676f6f5ea72899c606d83a42e9f9e268b
