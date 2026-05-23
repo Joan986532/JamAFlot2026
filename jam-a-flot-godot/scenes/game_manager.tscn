@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ce4vjqselp5eq"]
+
+[ext_resource type="Script" uid="uid://urllxwdgulyv" path="res://scripts/game_manager.gd" id="1_hwd4i"]
+
+[node name="Node" type="Node" unique_id=1241329797]
+script = ExtResource("1_hwd4i")
+
+[node name="Label" type="Label" parent="." unique_id=493773198]
+offset_right = 40.0
+offset_bottom = 23.0
