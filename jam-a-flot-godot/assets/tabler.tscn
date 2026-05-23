@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dxub8tnw08tbf"]
+
+[ext_resource type="PackedScene" uid="uid://cbgy0e5oasyh6" path="res://assets/SM_tableMed.glb" id="1_mf14r"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_04dsr"]
+size = Vector3(1.1015015, 0.9213867, 2.3237305)
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=2144101212]
+
+[node name="SM_tableMed" parent="." unique_id=2132923770 instance=ExtResource("1_mf14r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12449217, 0, 0.4046986)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_tableMed" unique_id=698307414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0010681152, 0.46183875, -0.00024414063)
+shape = SubResource("BoxShape3D_04dsr")

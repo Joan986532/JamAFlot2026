@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bwpxny64sn2mv"]
+
+[ext_resource type="PackedScene" uid="uid://chvbibftufo0w" path="res://assets/SM_placardMed.glb" id="1_x0v2f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qycw6"]
+size = Vector3(0.6085205, 2.1833496, 1.3036499)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1193188560]
+
+[node name="SM_placardMed" parent="." unique_id=2066241636 instance=ExtResource("1_x0v2f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.021939158, 0, 0.23950076)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_placardMed" unique_id=1935592821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0004272461, 1.088501, 0.00039672852)
+shape = SubResource("BoxShape3D_qycw6")
