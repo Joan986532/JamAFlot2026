@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://dwdcumhf4icr7"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5f452"]
+points = PackedVector3Array(-0.09, -1.05, -0.075, -0.09, -1.05, 0.075, -0.09, 1.05, -0.075, 0.09, -1.05, -0.075, 0.09, -1.05, 0.075, -0.09, 1.05, 0.075, 0.09, 1.05, -0.075, 0.09, 1.05, 0.075)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rpeva"]
+size = Vector3(0.15, 1.98, 0.98)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ekmla"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5f452"]
+size = Vector3(0.15, 1.904729, 0.80441403)
+
+[node name="door" type="Node3D" unique_id=1535484363]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=178760588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.38345, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1643750563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.10013792)
+shape = SubResource("ConvexPolygonShape3D_5f452")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=1269341844]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4048219, -0.6403147)
+mass = 5.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1275652760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.03178394)
+mesh = SubResource("BoxMesh_rpeva")
+surface_material_override/0 = SubResource("StandardMaterial3D_ekmla")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RigidBody3D" unique_id=92137904]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.016507626, -0.08771169)
+shape = SubResource("BoxShape3D_5f452")
+
+[node name="HingeJoint3D" type="HingeJoint3D" parent="." unique_id=894602452]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 1.302585, -0.1646663)
+node_a = NodePath("../StaticBody3D")
+node_b = NodePath("../RigidBody3D")
+angular_limit/enable = true
