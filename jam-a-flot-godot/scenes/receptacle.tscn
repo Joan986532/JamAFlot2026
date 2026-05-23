@@ -10,6 +10,7 @@ material = SubResource("StandardMaterial3D_1lwuf")
 size = Vector3(1, 0.1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aklvu"]
+size = Vector3(1, 0.32617188, 1)
 
 [node name="receptacle" type="Area3D" unique_id=303234696]
 collision_layer = 2
@@ -21,6 +22,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.43685675, 0)
 mesh = SubResource("BoxMesh_aklvu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1378835070]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.33691406, 0)
 shape = SubResource("BoxShape3D_aklvu")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
