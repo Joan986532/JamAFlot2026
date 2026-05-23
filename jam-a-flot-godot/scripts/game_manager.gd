@@ -6,7 +6,7 @@ var score = 0
 @onready var time_left: Label = $timeLeft
 @onready var failed: Label = $Failed
 
-var total_time : int = 3
+var total_time : int = 180
 
 func add_point():
 	score += 1
@@ -24,4 +24,5 @@ func _on_timer_timeout() -> void:
 	if total_time == 0:
 		timer.stop()
 		failed.set_visibility_layer(1)
-		get_tree().restart
+		get_tree().reload_current_scene()
+		
