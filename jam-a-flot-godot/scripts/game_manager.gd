@@ -25,3 +25,4 @@ func _on_timer_timeout() -> void:
 		timer.stop()
 		failed.set_visibility_layer(1)
 		get_tree().reload_current_scene()
+

@@ -4,7 +4,7 @@
 size = Vector3(16, 0.253, 5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_36trf"]
-size = Vector3(16, 0.25, 5)
+size = Vector3(15, 0.25, 5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ffxv4"]
 size = Vector3(15, 3, 1)
