@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://d1ps2bn54ujks"]
+
+[ext_resource type="PackedScene" uid="uid://5fa607arxrko" path="res://assets/SM_bureauMed.glb" id="1_8j6mu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8j6mu"]
+radius = 0.040527344
+height = 0.7426758
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_r40u3"]
+size = Vector3(0.7387085, 0.05130005, 1.3682861)
+
+[node name="Node3D" type="RigidBody3D" unique_id=1021266377]
+
+[node name="SM_bureauMed" parent="." unique_id=1078333947 instance=ExtResource("1_8j6mu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019745827, 0, -0.21250772)
+
+[node name="pied2" type="CollisionShape3D" parent="." unique_id=720327584]
+transform = Transform3D(0.9715574, -0.23680428, 0, 0.23398118, 0.9599748, 0.15395164, -0.036456406, -0.14957285, 0.98807836, 0.33297443, 0.3369972, 0.43117756)
+shape = SubResource("CapsuleShape3D_8j6mu")
+
+[node name="pied3" type="CollisionShape3D" parent="." unique_id=818169071]
+transform = Transform3D(-0.22053559, 0.2716678, -0.9367824, -0.13708591, 0.9422632, 0.3055296, 0.96569777, 0.19579993, -0.17056058, -0.3492179, 0.3445183, -0.86263436)
+shape = SubResource("CapsuleShape3D_8j6mu")
+
+[node name="pied4" type="CollisionShape3D" parent="." unique_id=455865507]
+transform = Transform3D(0.9640908, -0.23078054, 0.131415, 0.24643105, 0.9618601, -0.11873229, -0.099001825, 0.14685361, 0.9841912, 0.3271766, 0.35804647, -0.8568364)
+shape = SubResource("CapsuleShape3D_8j6mu")
+
+[node name="pied" type="CollisionShape3D" parent="." unique_id=47990748]
+transform = Transform3D(0.9784695, 0.20639208, 0, -0.20386848, 0.9665056, 0.15590006, 0.03217653, -0.15254343, 0.9877728, -0.37154618, 0.36209604, 0.42913616)
+shape = SubResource("CapsuleShape3D_8j6mu")
+
+[node name="table" type="CollisionShape3D" parent="." unique_id=1187780957]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016937256, 0.72050476, -0.20489502)
+shape = SubResource("BoxShape3D_r40u3")
