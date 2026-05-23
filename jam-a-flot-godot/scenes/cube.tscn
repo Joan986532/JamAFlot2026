@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://caa7c1rr8w5qa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5rbgv"]
+albedo_color = Color(0.94806045, 0.5707968, 1.1551381e-06, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_7ufek"]
+material = SubResource("StandardMaterial3D_5rbgv")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8viuf"]
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=1282383468]
+mass = 5.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=239127650]
+mesh = SubResource("SphereMesh_7ufek")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=790812191]
+shape = SubResource("SphereShape3D_8viuf")
