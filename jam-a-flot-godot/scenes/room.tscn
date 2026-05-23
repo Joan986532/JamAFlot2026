@@ -40,7 +40,13 @@ size = Vector3(0.25, 3, 2)
 size = Vector3(0.25, 3, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eom3m"]
-size = Vector3(15, 3, 1)
+size = Vector3(3, 3, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_f1tnb"]
+size = Vector3(7, 3, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ffxv4"]
+size = Vector3(3, 3, 1)
 
 [node name="Main" type="Node3D" unique_id=463186992]
 
@@ -144,12 +150,28 @@ shape = SubResource("BoxShape3D_ybpoa")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1.5, -1.5)
 mesh = SubResource("BoxMesh_qtoah")
 
-[node name="Wall_North" type="StaticBody3D" parent="." unique_id=725245168]
+[node name="Wall_North_East" type="StaticBody3D" parent="." unique_id=725245168]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_North" unique_id=453282428]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -3)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_North_East" unique_id=453282428]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.5, -3)
 shape = SubResource("BoxShape3D_eom3m")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_North" unique_id=1123299383]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_North_East" unique_id=1123299383]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.5, -3)
+mesh = SubResource("BoxMesh_f1tnb")
+
+[node name="Wall_North_West" type="StaticBody3D" parent="." unique_id=1355331895]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_North_West" unique_id=2008095028]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.5, -3)
+shape = SubResource("BoxShape3D_eom3m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_North_West" unique_id=1552464064]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.5, -3)
+mesh = SubResource("BoxMesh_f1tnb")
+
+[node name="Wall_North_Mid" type="StaticBody3D" parent="." unique_id=1424755110]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_North_Mid" unique_id=1380041555]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -3)
-mesh = SubResource("BoxMesh_85yof")
+mesh = SubResource("BoxMesh_ffxv4")

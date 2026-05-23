@@ -19,13 +19,13 @@ unique_name_in_owner = true
 transform = Transform3D(-0.9767772, -0.029975882, 0.21214998, 0.21185777, 0.01265289, 0.9772186, -0.031977292, 0.9994706, -0.0060084416, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Room" parent="." unique_id=2124256174 instance_placeholder="res://scenes/room.tscn"]
+[node name="Room" parent="." unique_id=463186992 instance=ExtResource("1_0wfyh")]
 
 [node name="Room2" parent="." unique_id=500258555 instance=ExtResource("1_0wfyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -20.587929)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -20.587929)
 
-[node name="Corridor" parent="." unique_id=463186992 instance=ExtResource("3_tefeu")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -10.146082)
+[node name="Corridor" parent="." unique_id=1088568126 instance=ExtResource("3_tefeu")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -10.288575)
 
 [node name="CharacterBody3D" parent="." unique_id=434899216 instance=ExtResource("2_sugp2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.875, 0)
