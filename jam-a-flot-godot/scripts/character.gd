@@ -23,7 +23,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		camera_3d.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera_3d.rotation.x = clampf(camera_3d.rotation.x, deg_to_rad(-89.9), deg_to_rad(89.9))
 
-func set_held_object(body: RigidBody3D):
+func set_held_object(body):
 	if body is RigidBody3D:
 		heldObject = body
 
@@ -31,7 +31,7 @@ func drop_held_object():
 	heldObject = null
 
 func handle_holding_object():
-	if (Input.is_action_just_pressed("interact")):
+	if (Input.is_action_pressed("interact")):
 		if heldObject != null: drop_held_object()
 		elif interact_ray.is_colliding(): set_held_object(interact_ray.get_collider())
 	

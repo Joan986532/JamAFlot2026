@@ -15,6 +15,7 @@ radius = 0.3
 height = 1.75
 
 [node name="CharacterBody3D" type="CharacterBody3D" unique_id=434899216]
+collision_mask = 3
 script = ExtResource("1_53v7d")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=9972262]
