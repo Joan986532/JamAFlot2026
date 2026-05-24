@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_gaziniereMed.glb-5d0c9c05eea14eaf6f779d8ad
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="StaticBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

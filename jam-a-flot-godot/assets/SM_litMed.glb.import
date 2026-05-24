@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_litMed.glb-10bb451418f41597108085a7c6ca2ac
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="StaticBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

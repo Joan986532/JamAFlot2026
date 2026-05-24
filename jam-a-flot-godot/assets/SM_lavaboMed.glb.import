@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_lavaboMed.glb-683315dbf72a3081775fbef54ee7
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="StaticBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

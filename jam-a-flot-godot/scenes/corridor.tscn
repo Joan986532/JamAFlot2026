@@ -6,14 +6,29 @@ size = Vector3(16, 0.253, 5)
 [sub_resource type="BoxMesh" id="BoxMesh_36trf"]
 size = Vector3(15, 0.25, 5)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ja801"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 10.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_ffxv4"]
 size = Vector3(15, 3, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_85yof"]
 size = Vector3(15, 3, 1)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mj2as"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 10.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_eom3m"]
 size = Vector3(15, 3, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xswuy"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 10.0
 
 [node name="Main" type="Node3D" unique_id=463186992]
 
@@ -26,6 +41,7 @@ shape = SubResource("BoxShape3D_f1tnb")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=942144615]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 mesh = SubResource("BoxMesh_36trf")
+surface_material_override/0 = SubResource("StandardMaterial3D_ja801")
 
 [node name="Wall_South" type="StaticBody3D" parent="." unique_id=1623632946]
 
@@ -36,6 +52,7 @@ shape = SubResource("BoxShape3D_ffxv4")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_South" unique_id=2013777947]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 3)
 mesh = SubResource("BoxMesh_85yof")
+surface_material_override/0 = SubResource("StandardMaterial3D_mj2as")
 
 [node name="Wall_North" type="StaticBody3D" parent="." unique_id=725245168]
 
@@ -46,3 +63,4 @@ shape = SubResource("BoxShape3D_eom3m")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_North" unique_id=1123299383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -3)
 mesh = SubResource("BoxMesh_85yof")
+surface_material_override/0 = SubResource("StandardMaterial3D_xswuy")

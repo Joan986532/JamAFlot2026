@@ -7,6 +7,7 @@ data = PackedVector3Array(44.8761, 97.919, -73.5405, 43.0994, 96.627, -66.4295, 
 
 [node name="SM_tableMed" unique_id=1813249127 instance=ExtResource("1_asc4g")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1929441746]
-transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
+[node name="StaticBody3D" type="StaticBody3D" parent="SM_tableMedieval" parent_id_path=PackedInt32Array(1725558344) index="0" unique_id=1536701022]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SM_tableMedieval/StaticBody3D" index="0" unique_id=1929441746]
 shape = SubResource("ConcavePolygonShape3D_qwksa")
