@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://ccfx8g18jrxgb"]
 
 [ext_resource type="PackedScene" uid="uid://cvq5q04b5l7bq" path="res://assets/Gaziniere/SM_marmite.glb" id="1_dg5dg"]
+[ext_resource type="Texture2D" uid="uid://ckm07gvdg1ui6" path="res://texture/gaziniereM/gaziniereM_Cauldron_Mat_BaseColor.1001.png" id="2_vvr1d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7ybfe"]
+albedo_texture = ExtResource("2_vvr1d")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dg5dg"]
 size = Vector3(0.12841797, 0.5389557, 0.71447754)
@@ -12,6 +16,9 @@ size = Vector3(0.7350464, 0.5390625, 0.09448242)
 size = Vector3(0.736084, 0.068115234, 0.71899414)
 
 [node name="SM_marmite2" unique_id=1104411243 instance=ExtResource("1_dg5dg")]
+
+[node name="SM_marmite" parent="SM_gaziniereMedieval" parent_id_path=PackedInt32Array(2022766368) index="0" unique_id=699945528]
+surface_material_override/0 = SubResource("StandardMaterial3D_7ybfe")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1797791395]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30004883, 0.3243103, -0.0016479492)

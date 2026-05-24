@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://cqps8veyjai42"]
 
 [ext_resource type="PackedScene" uid="uid://mw3kpbhswkaw" path="res://assets/SM_fauteuilMed.glb" id="1_psq7w"]
+[ext_resource type="Texture2D" uid="uid://dokeqt1vrqodd" path="res://texture/fauteuille_M/fauteilleM_lambert1_BaseColor.1001.png" id="2_0aqjn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k61ox"]
+albedo_texture = ExtResource("2_0aqjn")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0aqjn"]
 size = Vector3(0.8387451, 0.54241943, 0.8057709)
@@ -16,6 +20,9 @@ size = Vector3(0.22351074, 0.32409668, 0.6088867)
 
 [node name="SM_fauteuilMed" unique_id=1558978975 instance=ExtResource("1_psq7w")]
 mass = 50.0
+
+[node name="SM_fauteuilMedieval" parent="." index="0" unique_id=798916795]
+surface_material_override/0 = SubResource("StandardMaterial3D_k61ox")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1842351049]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1035156e-05, 0.26968384, 0.048057556)
