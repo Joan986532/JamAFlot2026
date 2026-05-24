@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bjggiiwpimvvu"]
+
+[ext_resource type="PackedScene" uid="uid://b08oy6mn4iwdq" path="res://assets/Moderne/SM_fauteuilModerne.glb" id="1_eeryj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a5ur7"]
+size = Vector3(1.2556152, 1.3305054, 0.2993164)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_omuvy"]
+size = Vector3(1.2333374, 0.70996094, 0.6765137)
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=1955430631]
+
+[node name="SM_fauteuilModerne" parent="." unique_id=1886491871 instance=ExtResource("1_eeryj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05170393, 0, 0.23556685)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1013555434]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04748535, 0.6539612, -0.09350586)
+shape = SubResource("BoxShape3D_a5ur7")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=2025345380]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05117798, 0.35888672, 0.38659668)
+shape = SubResource("BoxShape3D_omuvy")
