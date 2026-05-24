@@ -12,7 +12,7 @@ func set_values():
 		failed.hide()
 		success.hide()
 		to_restart.hide()
-		time = 15
+		time = 180
 		timer.start()
  
 func _ready():
@@ -36,6 +36,6 @@ func _process(_delta: float) -> void:
 		set_values()
 		time_left.text = ""
 		get_tree().reload_current_scene()
-	if Global.score == 1 and time != 0:
+	if Global.score == 6 and time != 0:
 		timer.stop()
 		success.show()

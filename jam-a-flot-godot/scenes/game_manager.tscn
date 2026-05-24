@@ -142,7 +142,7 @@ offset_top = 124.00001
 offset_right = 180.0
 offset_bottom = 296.95898
 rotation = 0.61086524
-texture = ExtResource("3_eaq8r")
+texture = ExtResource("3_udu3i")
 expand_mode = 1
 
 [node name="SwordValid" type="TextureRect" parent="." unique_id=1651253065]
@@ -152,7 +152,7 @@ offset_top = 124.00001
 offset_right = 180.0
 offset_bottom = 296.95898
 rotation = 0.61086524
-texture = ExtResource("3_udu3i")
+texture = ExtResource("3_eaq8r")
 expand_mode = 1
 
 [node name="BouclierShadow" type="TextureRect" parent="." unique_id=700129448]
@@ -161,7 +161,7 @@ offset_top = 277.00003
 offset_right = 171.46025
 offset_bottom = 422.09222
 rotation = 0.61086524
-texture = ExtResource("4_ternb")
+texture = ExtResource("4_eaq8r")
 expand_mode = 1
 
 [node name="BouclierValid" type="TextureRect" parent="." unique_id=1750711406]
@@ -171,7 +171,7 @@ offset_top = 277.00003
 offset_right = 171.46025
 offset_bottom = 422.09222
 rotation = 0.61086524
-texture = ExtResource("4_eaq8r")
+texture = ExtResource("4_ternb")
 expand_mode = 1
 
 [node name="CouronneShadow" type="TextureRect" parent="." unique_id=621754556]
@@ -180,7 +180,7 @@ offset_top = 415.00003
 offset_right = 164.05652
 offset_bottom = 536.0565
 rotation = 0.61086524
-texture = ExtResource("5_q8mjp")
+texture = ExtResource("5_ternb")
 expand_mode = 1
 
 [node name="CouronneValid" type="TextureRect" parent="." unique_id=1465320032]
@@ -190,7 +190,7 @@ offset_top = 415.00003
 offset_right = 164.05652
 offset_bottom = 536.0565
 rotation = 0.61086524
-texture = ExtResource("5_ternb")
+texture = ExtResource("5_q8mjp")
 expand_mode = 1
 
 [node name="TelephoneShadow" type="TextureRect" parent="." unique_id=1407052303]
@@ -199,17 +199,17 @@ offset_top = 197.28828
 offset_right = 1068.366
 offset_bottom = 321.79065
 rotation = -0.61086524
-texture = ExtResource("6_jdad8")
+texture = ExtResource("9_lcbjr")
 expand_mode = 1
 
 [node name="TelephoneValid" type="TextureRect" parent="." unique_id=1354588252]
 visible = false
-offset_left = 992.0
-offset_top = 196.99997
-offset_right = 1095.366
-offset_bottom = 321.50232
+offset_left = 964.0
+offset_top = 197.00006
+offset_right = 1067.366
+offset_bottom = 321.5024
 rotation = -0.61086524
-texture = ExtResource("9_lcbjr")
+texture = ExtResource("6_jdad8")
 expand_mode = 1
 
 [node name="BouteilleShadow" type="TextureRect" parent="." unique_id=85182644]
@@ -218,17 +218,17 @@ offset_top = 322.28833
 offset_right = 1082.0
 offset_bottom = 507.77853
 rotation = -0.61086524
-texture = ExtResource("7_k4jhu")
+texture = ExtResource("11_30v7y")
 expand_mode = 1
 
 [node name="BouteilleValid" type="TextureRect" parent="." unique_id=429363895]
 visible = false
-offset_left = 955.0
-offset_top = 322.00003
-offset_right = 1109.0
-offset_bottom = 507.49023
+offset_left = 927.0
+offset_top = 321.0
+offset_right = 1081.0
+offset_bottom = 506.4902
 rotation = -0.61086524
-texture = ExtResource("11_30v7y")
+texture = ExtResource("7_k4jhu")
 expand_mode = 1
 
 [node name="VapeShadow" type="TextureRect" parent="." unique_id=1922278253]
@@ -237,17 +237,17 @@ offset_top = 468.28833
 offset_right = 1077.9437
 offset_bottom = 611.55383
 rotation = -0.61086524
-texture = ExtResource("8_frtjd")
+texture = ExtResource("13_5xtl8")
 expand_mode = 1
 
 [node name="VapeValid" type="TextureRect" parent="." unique_id=1650540694]
 visible = false
-offset_left = 986.0
-offset_top = 468.0
-offset_right = 1104.9437
+offset_left = 958.0
+offset_top = 468.00003
+offset_right = 1076.9437
 offset_bottom = 611.2655
 rotation = -0.61086524
-texture = ExtResource("13_5xtl8")
+texture = ExtResource("8_frtjd")
 expand_mode = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
