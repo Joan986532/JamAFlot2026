@@ -5,11 +5,18 @@
 [ext_resource type="PackedScene" uid="uid://ce4vjqselp5eq" path="res://scenes/game_manager.tscn" id="1_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b6vjg25xr4k6c" path="res://scenes/character.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dwdcumhf4icr7" path="res://scenes/door.tscn" id="2_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://cubkdlmiotlu8" path="res://scenes/static_object.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://b72x6grkqaaoa" path="res://scenes/corridor.tscn" id="3_tefeu"]
 [ext_resource type="PackedScene" uid="uid://caa7c1rr8w5qa" path="res://scenes/cube.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bdy600fx4bjx5" path="res://scenes/receptacle.tscn" id="5_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://cvhj3p320sq5f" path="res://scenes/sm_tabouret_med.tscn" id="10_choun"]
+[ext_resource type="PackedScene" uid="uid://cxr17ejgiwxuy" path="res://scenes/Medieval/baignoire.tscn" id="9_gqmmt"]
+[ext_resource type="PackedScene" uid="uid://cov1jyufohbve" path="res://scenes/Medieval/sm_toilette_med.tscn" id="11_jscy8"]
+[ext_resource type="PackedScene" uid="uid://cvhj3p320sq5f" path="res://scenes/Medieval/sm_tabouret_med.tscn" id="12_pm3ni"]
+[ext_resource type="PackedScene" uid="uid://y5f0w2tkubdm" path="res://scenes/Medieval/sm_coffre_medieval.tscn" id="14_og1vs"]
+[ext_resource type="PackedScene" uid="uid://couf0ia1jxwic" path="res://scenes/Medieval/sm_cheminee_med.tscn" id="15_2wyq8"]
+[ext_resource type="PackedScene" uid="uid://rh6unc3icfux" path="res://scenes/Medieval/sm_canape_med.tscn" id="16_vxglm"]
+[ext_resource type="PackedScene" uid="uid://d1ps2bn54ujks" path="res://scenes/Medieval/sm_bureau_med.tscn" id="17_2f3dj"]
+[ext_resource type="PackedScene" uid="uid://6u3aus7k6mxo" path="res://scenes/Medieval/sm_table_med.tscn" id="17_muem4"]
+[ext_resource type="PackedScene" uid="uid://csu716r2h353t" path="res://scenes/Medieval/sm_bibliotheque_med.tscn" id="18_yq6so"]
 
 [node name="Node3D" type="Node3D" unique_id=523509601]
 script = ExtResource("1_tbgi4")
@@ -18,7 +25,7 @@ script = ExtResource("1_tbgi4")
 unique_name_in_owner = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1570300939]
-transform = Transform3D(-0.9767772, -0.029975882, 0.21214998, 0.21185777, 0.01265289, 0.9772186, -0.031977292, 0.9994706, -0.0060084416, 0, 0, 0)
+transform = Transform3D(-0.97677726, -0.029975878, 0.21215022, 0.21185778, 0.012652889, 0.9772186, -0.031977296, 0.9994706, -0.006008431, 7.3411217, 8.632092, -2.7457397)
 shadow_enabled = true
 
 [node name="Room" parent="." unique_id=463186992 instance=ExtResource("1_0wfyh")]
@@ -44,17 +51,35 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0
 [node name="CharacterBody3D" parent="." unique_id=434899216 instance=ExtResource("2_sugp2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2117937, -5.216529)
 
-[node name="Table" parent="." unique_id=686103420 instance=ExtResource("3_sugp2")]
-transform = Transform3D(1.2, 0, 0, 0, 1, 0, 0, 0, 0.8, 2, 0.5, -1)
-
-[node name="RigidBody3D" parent="." unique_id=1282383468 instance=ExtResource("4_jyhfs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8584161, 1.5, -0.95770776)
-
 [node name="Area3D" parent="." unique_id=303234696 instance=ExtResource("5_tbgi4")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.9900043, 0.870133, -1.5141424)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3475792, 0.870133, -2.0292368)
 
 [node name="RigidBody3D2" parent="." unique_id=256976419 instance=ExtResource("4_jyhfs")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.8723707, 0.6438718, 1.1188852)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.724212, 1.4566431, -0.22888708)
 
-[node name="SM_tabouretMed" parent="." unique_id=396149364 instance=ExtResource("10_choun")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4410013, -7.1525574e-05, -0.8133546)
+[node name="SM_baignoirMed" parent="." unique_id=544532392 instance=ExtResource("9_gqmmt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.381154, -7.1525574e-05, 1.9632385)
+
+[node name="SM_toiletteMed" parent="." unique_id=22962878 instance=ExtResource("11_jscy8")]
+transform = Transform3D(-8.742278e-08, 0, 2, 0, 2, 0, -2, 0, -8.742278e-08, -5.845126, -7.104874e-05, -2.177517)
+
+[node name="SM_tabouretMed" parent="." unique_id=396149364 instance=ExtResource("12_pm3ni")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.218051, -7.104874e-05, 2.2924886)
+
+[node name="coffre" parent="." unique_id=491263975 instance=ExtResource("14_og1vs")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.386125, -7.104874e-05, 2.1363668)
+
+[node name="SM_chemineeMed" parent="." unique_id=519052173 instance=ExtResource("15_2wyq8")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 9.344939, -7.200241e-05, -0.10213184)
+
+[node name="SM_canapeMed" parent="." unique_id=729854573 instance=ExtResource("16_vxglm")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3.3181336, -7.247925e-05, 1.5443549)
+
+[node name="Node3D" parent="." unique_id=1021266377 instance=ExtResource("17_2f3dj")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.480674, -7.1525574e-05, -1.6577256)
+
+[node name="SM_bibliothequeMed" parent="." unique_id=557939301 instance=ExtResource("18_yq6so")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.107554, -7.1507595e-05, -2.1684663)
+
+[node name="StaticBody3D" parent="." unique_id=1870553609 instance=ExtResource("17_muem4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25825357, -0.00049972534, -0.14252295)

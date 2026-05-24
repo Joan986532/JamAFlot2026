@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6u3aus7k6mxo"]
+
+[ext_resource type="PackedScene" uid="uid://cbgy0e5oasyh6" path="res://assets/SM_tableMed.glb" id="1_cab48"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cab48"]
+size = Vector3(1.1044312, 0.9336548, 2.3321228)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1870553609]
+
+[node name="SM_tableMed" parent="." unique_id=2132923770 instance=ExtResource("1_cab48")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.05074644, 0, 0.21421766)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=342578451]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052180767, 0.46395874, 0.21844435)
+shape = SubResource("BoxShape3D_cab48")

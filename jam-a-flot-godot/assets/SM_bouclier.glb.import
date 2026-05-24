@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uso5acumg17t"
-path="res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"
+uid="uid://bjiwmxfi0s64y"
+path="res://.godot/imported/SM_bouclier.glb-b1f40c33209bc64ee7b18a388b54c58c.scn"
 
 [deps]
 
-source_file="res://assets/SM_chaiseMed.glb"
-dest_files=["res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"]
+source_file="res://assets/SM_bouclier.glb"
+dest_files=["res://.godot/imported/SM_bouclier.glb-b1f40c33209bc64ee7b18a388b54c58c.scn"]
 
 [params]
 

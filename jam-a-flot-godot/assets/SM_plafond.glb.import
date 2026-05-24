@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uso5acumg17t"
-path="res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"
+uid="uid://b418gynkvla0s"
+path="res://.godot/imported/SM_plafond.glb-eb5dc91cc55e4fd291d04161c5bff4dc.scn"
 
 [deps]
 
-source_file="res://assets/SM_chaiseMed.glb"
-dest_files=["res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"]
+source_file="res://assets/SM_plafond.glb"
+dest_files=["res://.godot/imported/SM_plafond.glb-eb5dc91cc55e4fd291d04161c5bff4dc.scn"]
 
 [params]
 
-nodes/root_type="RigidBody3D"
+nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

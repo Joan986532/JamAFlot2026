@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uso5acumg17t"
-path="res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"
+uid="uid://cly1yrds6rdh2"
+path="res://.godot/imported/SM_sol.glb-59dc1a360daf17c9274e6eda36f55339.scn"
 
 [deps]
 
-source_file="res://assets/SM_chaiseMed.glb"
-dest_files=["res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"]
+source_file="res://assets/SM_sol.glb"
+dest_files=["res://.godot/imported/SM_sol.glb-59dc1a360daf17c9274e6eda36f55339.scn"]
 
 [params]
 
-nodes/root_type="RigidBody3D"
+nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

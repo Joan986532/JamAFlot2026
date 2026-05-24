@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bqnp1x1eo0bqt"]
+
+[ext_resource type="PackedScene" uid="uid://uso5acumg17t" path="res://assets/SM_chaiseMed.glb" id="1_28lle"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4mwb3"]
+size = Vector3(0.43640137, 0.54660034, 0.51293945)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p05nq"]
+size = Vector3(0.15289307, 1.2783203, 0.5731201)
+
+[node name="SM_chaiseMed" unique_id=1638256112 instance=ExtResource("1_28lle")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1045014071]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00018310547, 0.27513123, 0.0020751953)
+shape = SubResource("BoxShape3D_4mwb3")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2" unique_id=1620078119]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14431763, 0.6430664, -6.1035156e-05)
+shape = SubResource("BoxShape3D_p05nq")

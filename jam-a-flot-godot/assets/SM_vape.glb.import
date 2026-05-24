@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uso5acumg17t"
-path="res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"
+uid="uid://bpmba0g5q6jud"
+path="res://.godot/imported/SM_vape.glb-47b0f151051525328d70062473116565.scn"
 
 [deps]
 
-source_file="res://assets/SM_chaiseMed.glb"
-dest_files=["res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"]
+source_file="res://assets/SM_vape.glb"
+dest_files=["res://.godot/imported/SM_vape.glb-47b0f151051525328d70062473116565.scn"]
 
 [params]
 

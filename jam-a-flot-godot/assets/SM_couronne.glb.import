@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://uso5acumg17t"
-path="res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"
+uid="uid://5dktbw1bu4jw"
+path="res://.godot/imported/SM_couronne.glb-a8ac2dd284cbb88bb32ca3ab25b4eac1.scn"
 
 [deps]
 
-source_file="res://assets/SM_chaiseMed.glb"
-dest_files=["res://.godot/imported/SM_chaiseMed.glb-4ce476e00f0fcb263a91d6ec0aca4d5f.scn"]
+source_file="res://assets/SM_couronne.glb"
+dest_files=["res://.godot/imported/SM_couronne.glb-a8ac2dd284cbb88bb32ca3ab25b4eac1.scn"]
 
 [params]
 
