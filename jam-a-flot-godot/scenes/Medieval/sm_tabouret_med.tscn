@@ -1,12 +1,19 @@
 [gd_scene format=3 uid="uid://cvhj3p320sq5f"]
 
 [ext_resource type="PackedScene" uid="uid://do0vryharty1l" path="res://assets/SM_tabouretMed.glb" id="1_6rlsr"]
+[ext_resource type="Texture2D" uid="uid://dpc1w60ra6hkg" path="res://texture/baignoire/baignoireM_T_baignoireMedieval_BaseColor.png" id="2_kq8ep"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0q56l"]
+albedo_texture = ExtResource("2_kq8ep")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_85iks"]
 height = 0.47610474
 radius = 0.2626953
 
 [node name="SM_tabouretMed" unique_id=1619914943 instance=ExtResource("1_6rlsr")]
+
+[node name="SM_tabouretBureau" parent="." index="0" unique_id=1838732290]
+surface_material_override/0 = SubResource("StandardMaterial3D_0q56l")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1881652305]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0036535263, 0.23698425, 0)

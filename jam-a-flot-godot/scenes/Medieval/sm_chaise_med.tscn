@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://bqnp1x1eo0bqt"]
 
 [ext_resource type="PackedScene" uid="uid://uso5acumg17t" path="res://assets/SM_chaiseMed.glb" id="1_28lle"]
+[ext_resource type="Texture2D" uid="uid://rtuciaanddk" path="res://texture/chaiseMed/chaideM_T_chaiseMedievale_BaseColor.png" id="2_4mwb3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p05nq"]
+albedo_texture = ExtResource("2_4mwb3")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4mwb3"]
 size = Vector3(0.43640137, 0.54660034, 0.51293945)
@@ -9,6 +13,9 @@ size = Vector3(0.43640137, 0.54660034, 0.51293945)
 size = Vector3(0.15289307, 1.2783203, 0.5731201)
 
 [node name="SM_chaiseMed" unique_id=1638256112 instance=ExtResource("1_28lle")]
+
+[node name="SM_chaiseMedievale" parent="." index="0" unique_id=1538839631]
+surface_material_override/0 = SubResource("StandardMaterial3D_p05nq")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1045014071]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00018310547, 0.27513123, 0.0020751953)
