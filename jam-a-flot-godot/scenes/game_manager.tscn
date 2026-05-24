@@ -1,7 +1,24 @@
 [gd_scene format=3 uid="uid://ce4vjqselp5eq"]
 
 [ext_resource type="Script" uid="uid://urllxwdgulyv" path="res://scripts/game_manager.gd" id="1_hwd4i"]
-[ext_resource type="Script" uid="uid://b1l0g36wrhxki" path="res://scenes/objective.gd" id="2_glms7"]
+[ext_resource type="Texture2D" uid="uid://deomen5la6hn" path="res://assets/ui/sword.png" id="3_eaq8r"]
+[ext_resource type="Texture2D" uid="uid://dryh01484urvr" path="res://assets/ui/sword_black.png" id="3_udu3i"]
+[ext_resource type="Texture2D" uid="uid://dwfdw1tnv6h4t" path="res://assets/ui/bouclier_sh.png" id="4_eaq8r"]
+[ext_resource type="Texture2D" uid="uid://2hxu8k5cvphw" path="res://assets/ui/bouclier.png" id="4_ternb"]
+[ext_resource type="Texture2D" uid="uid://c36ugx0y28jvb" path="res://assets/ui/couronne.png" id="5_q8mjp"]
+[ext_resource type="Texture2D" uid="uid://4b08cealxwd1" path="res://assets/ui/couronne.sh.png" id="5_ternb"]
+[ext_resource type="Texture2D" uid="uid://blnysip4wwlse" path="res://assets/ui/telephone.png" id="6_jdad8"]
+[ext_resource type="Texture2D" uid="uid://xxyevqo2m6lb" path="res://assets/ui/bouteille.png" id="7_k4jhu"]
+[ext_resource type="Texture2D" uid="uid://bow21s4trer6q" path="res://assets/ui/vape.png" id="8_frtjd"]
+[ext_resource type="Texture2D" uid="uid://cs0w8c6ust8nu" path="res://assets/ui/telephone_sh.png" id="9_lcbjr"]
+[ext_resource type="Texture2D" uid="uid://b48qf1ndm5xif" path="res://assets/ui/bouteille_sh.png" id="11_30v7y"]
+[ext_resource type="Texture2D" uid="uid://duqmh4uwwvnsa" path="res://assets/ui/vape_sh.png" id="13_5xtl8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_q8mjp"]
+font_size = 23
+
+[sub_resource type="LabelSettings" id="LabelSettings_jdad8"]
+font_size = 23
 
 [node name="Node" type="Node" unique_id=1241329797]
 script = ExtResource("1_hwd4i")
@@ -51,24 +68,36 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="timeLeft" type="Label" parent="." unique_id=403730887]
-offset_left = 949.0
-offset_top = 14.0
-offset_right = 1131.0
-offset_bottom = 46.0
+offset_left = 473.0
+offset_top = 15.0
+offset_right = 655.0
+offset_bottom = 47.0
 theme_override_font_sizes/font_size = 23
 text = "00:15"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Objective" type="Label" parent="." unique_id=493773198]
-offset_left = 22.0
-offset_top = 18.0
-offset_right = 187.0
-offset_bottom = 41.0
+[node name="PAST" type="Label" parent="." unique_id=493773198]
+offset_left = 28.0
+offset_top = 14.0
+offset_right = 104.0
+offset_bottom = 53.0
 theme_override_font_sizes/font_size = 20
+text = "PAST"
+label_settings = SubResource("LabelSettings_q8mjp")
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("2_glms7")
+
+[node name="PRESENT" type="Label" parent="." unique_id=216488049]
+offset_left = 1021.0
+offset_top = 18.0
+offset_right = 1119.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 20
+text = "PRESENT"
+label_settings = SubResource("LabelSettings_jdad8")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="cursor" type="Label" parent="." unique_id=461565794]
 anchors_preset = 8
@@ -106,5 +135,119 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="." unique_id=2138726293]
+
+[node name="SwordShadow" type="TextureRect" parent="." unique_id=539308900]
+offset_left = 76.00001
+offset_top = 124.00001
+offset_right = 180.0
+offset_bottom = 296.95898
+rotation = 0.61086524
+texture = ExtResource("3_eaq8r")
+expand_mode = 1
+
+[node name="SwordValid" type="TextureRect" parent="." unique_id=1651253065]
+visible = false
+offset_left = 76.00001
+offset_top = 124.00001
+offset_right = 180.0
+offset_bottom = 296.95898
+rotation = 0.61086524
+texture = ExtResource("3_udu3i")
+expand_mode = 1
+
+[node name="BouclierShadow" type="TextureRect" parent="." unique_id=700129448]
+offset_left = 51.0
+offset_top = 277.00003
+offset_right = 171.46025
+offset_bottom = 422.09222
+rotation = 0.61086524
+texture = ExtResource("4_ternb")
+expand_mode = 1
+
+[node name="BouclierValid" type="TextureRect" parent="." unique_id=1750711406]
+visible = false
+offset_left = 51.0
+offset_top = 277.00003
+offset_right = 171.46025
+offset_bottom = 422.09222
+rotation = 0.61086524
+texture = ExtResource("4_eaq8r")
+expand_mode = 1
+
+[node name="CouronneShadow" type="TextureRect" parent="." unique_id=621754556]
+offset_left = 42.99997
+offset_top = 415.00003
+offset_right = 164.05652
+offset_bottom = 536.0565
+rotation = 0.61086524
+texture = ExtResource("5_q8mjp")
+expand_mode = 1
+
+[node name="CouronneValid" type="TextureRect" parent="." unique_id=1465320032]
+visible = false
+offset_left = 42.99997
+offset_top = 415.00003
+offset_right = 164.05652
+offset_bottom = 536.0565
+rotation = 0.61086524
+texture = ExtResource("5_ternb")
+expand_mode = 1
+
+[node name="TelephoneShadow" type="TextureRect" parent="." unique_id=1407052303]
+offset_left = 992.0
+offset_top = 196.99997
+offset_right = 1095.366
+offset_bottom = 321.50232
+rotation = -0.61086524
+texture = ExtResource("6_jdad8")
+expand_mode = 1
+
+[node name="TelephoneValid" type="TextureRect" parent="." unique_id=1354588252]
+visible = false
+offset_left = 992.0
+offset_top = 196.99997
+offset_right = 1095.366
+offset_bottom = 321.50232
+rotation = -0.61086524
+texture = ExtResource("9_lcbjr")
+expand_mode = 1
+
+[node name="BouteilleShadow" type="TextureRect" parent="." unique_id=85182644]
+offset_left = 955.0
+offset_top = 322.00003
+offset_right = 1109.0
+offset_bottom = 507.49023
+rotation = -0.61086524
+texture = ExtResource("7_k4jhu")
+expand_mode = 1
+
+[node name="BouteilleValid" type="TextureRect" parent="." unique_id=429363895]
+visible = false
+offset_left = 955.0
+offset_top = 322.00003
+offset_right = 1109.0
+offset_bottom = 507.49023
+rotation = -0.61086524
+texture = ExtResource("11_30v7y")
+expand_mode = 1
+
+[node name="VapeShadow" type="TextureRect" parent="." unique_id=1922278253]
+offset_left = 986.0
+offset_top = 468.0
+offset_right = 1104.9437
+offset_bottom = 611.2655
+rotation = -0.61086524
+texture = ExtResource("8_frtjd")
+expand_mode = 1
+
+[node name="VapeValid" type="TextureRect" parent="." unique_id=1650540694]
+visible = false
+offset_left = 986.0
+offset_top = 468.0
+offset_right = 1104.9437
+offset_bottom = 611.2655
+rotation = -0.61086524
+texture = ExtResource("13_5xtl8")
+expand_mode = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
