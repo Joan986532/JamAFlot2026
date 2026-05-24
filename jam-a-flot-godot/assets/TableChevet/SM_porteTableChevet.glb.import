@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_porteTableChevet.glb-cf5ee19bbec81c49d7e16
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

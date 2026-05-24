@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_tabouretMed.glb-64cf8fa88a3fba45d5a1da954d
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

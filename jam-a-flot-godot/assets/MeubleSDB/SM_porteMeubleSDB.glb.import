@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_porteMeubleSDB.glb-57346a1253438c293e346fd
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

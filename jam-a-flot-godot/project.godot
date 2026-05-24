@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+
 Global="*uid://dvsmmwkcq7u62"
 
 [input]
