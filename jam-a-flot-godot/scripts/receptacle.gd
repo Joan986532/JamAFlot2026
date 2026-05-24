@@ -42,3 +42,4 @@ func _on_body_exited(body: Node3D) -> void:
 		bouteille_valid.visible = false
 	if(body.name.begins_with("SP_telephone")):
 		telephone_valid.visible = false
+
