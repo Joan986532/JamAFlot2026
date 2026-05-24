@@ -1,6 +1,15 @@
 [gd_scene format=3 uid="uid://d1ps2bn54ujks"]
 
 [ext_resource type="PackedScene" uid="uid://5fa607arxrko" path="res://assets/SM_bureauMed.glb" id="1_8j6mu"]
+[ext_resource type="ArrayMesh" uid="uid://bwqnspxk4g47r" path="res://convert_fbx/bureauM.res" id="1_gpfsa"]
+[ext_resource type="Texture2D" uid="uid://cb67g2qyikxs0" path="res://texture/bureauM/bureauM_T_bureau_BaseColor.1001.png" id="2_q7hta"]
+[ext_resource type="Texture2D" uid="uid://0v5qd87u3rmj" path="res://texture/bureauM/bureauM_T_plume_BaseColor.1001.png" id="3_7p1a2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xx40o"]
+albedo_texture = ExtResource("2_q7hta")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrh65"]
+albedo_texture = ExtResource("3_7p1a2")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8j6mu"]
 radius = 0.040527344
@@ -11,8 +20,15 @@ size = Vector3(0.7387085, 0.05130005, 1.3682861)
 
 [node name="Node3D" type="RigidBody3D" unique_id=1021266377]
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=125033160]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019745827, 0, -0.21250772)
+mesh = ExtResource("1_gpfsa")
+surface_material_override/0 = SubResource("StandardMaterial3D_xx40o")
+surface_material_override/1 = SubResource("StandardMaterial3D_hrh65")
+
 [node name="SM_bureauMed" parent="." unique_id=1078333947 instance=ExtResource("1_8j6mu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019745827, 0, -0.21250772)
+visible = false
 
 [node name="pied2" type="CollisionShape3D" parent="." unique_id=720327584]
 transform = Transform3D(0.9715574, -0.23680428, 0, 0.23398118, 0.9599748, 0.15395164, -0.036456406, -0.14957285, 0.98807836, 0.33297443, 0.3369972, 0.43117756)
