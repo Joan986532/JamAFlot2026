@@ -1,28 +1,34 @@
 extends Node
 
-var score = 0
 @onready var objective: Label = $Objective
-@onready var timer: Timer = $Timer
 @onready var time_left: Label = $timeLeft
 @onready var failed: Label = $Failed
+@onready var to_restart: Label = $toRestart
+@onready var timer: Timer = $Timer
 
-var total_time : int = 180
+var time : int = 180
 
-func add_point():
-	score += 1
-	objective.text = "Objects collected: " + str(score) + "/6"
-
-func remove_point():
-	score -= 1
-	objective.text = "Objects collected: " + str(score) + "/6"
+func set_values():
+		failed.hide()
+		to_restart.hide()
+		time = 15
+		timer.start()
+ 
+func _ready():
+	set_values()
 
 func _on_timer_timeout() -> void:
-	total_time -= 1
-	var m = int(total_time / 60)
-	var s = total_time - m * 60
+	time -= 1
+	var m = int(time / 60)
+	var s = time - m * 60
 	time_left.text = '%02d:%02d' % [m, s]
-	if total_time == 0:
+	if time == 0:
 		timer.stop()
-		failed.set_visibility_layer(1)
-		get_tree().reload_current_scene()
+		failed.show()
+		to_restart.show()
 
+func _process(delta: float) -> void:
+	if time == 0 && Input.is_action_just_pressed("restart"):
+		set_values()
+		time_left.text = ""
+		get_tree().reload_current_scene()
