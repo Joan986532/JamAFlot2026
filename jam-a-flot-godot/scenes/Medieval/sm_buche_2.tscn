@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cgasxo2d8mg6"]
+
+[ext_resource type="PackedScene" uid="uid://55us0q4afbyo" path="res://assets/Gaziniere/SM_buche.glb" id="1_pcvdn"]
+[ext_resource type="Texture2D" uid="uid://chyq487s20asc" path="res://texture/bibliothque/bibliothequeM_T_bibliothequeMedieval_BaseColor.1001.png" id="2_awcwr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mog7u"]
+albedo_texture = ExtResource("2_awcwr")
+
+[node name="SM_buche2" unique_id=948135816 instance=ExtResource("1_pcvdn")]
+
+[node name="SM_buche" parent="SM_gaziniereMedieval" parent_id_path=PackedInt32Array(1501374587) index="0" unique_id=1696005045]
+surface_material_override/0 = SubResource("StandardMaterial3D_mog7u")
