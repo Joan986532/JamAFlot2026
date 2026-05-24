@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_tableChevet.glb-4ca1b7f07ec403ce634211f652
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="StaticBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

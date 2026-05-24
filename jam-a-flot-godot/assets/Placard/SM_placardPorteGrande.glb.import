@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_placardPorteGrande.glb-fc3b069930b045e28d9
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

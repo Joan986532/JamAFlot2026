@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ccfx8g18jrxgb"]
+
+[ext_resource type="PackedScene" uid="uid://cvq5q04b5l7bq" path="res://assets/Gaziniere/SM_marmite.glb" id="1_dg5dg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dg5dg"]
+size = Vector3(0.12841797, 0.5389557, 0.71447754)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vvr1d"]
+size = Vector3(0.7350464, 0.5390625, 0.09448242)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7ybfe"]
+size = Vector3(0.736084, 0.068115234, 0.71899414)
+
+[node name="SM_marmite2" unique_id=1104411243 instance=ExtResource("1_dg5dg")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1797791395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30004883, 0.3243103, -0.0016479492)
+shape = SubResource("BoxShape3D_dg5dg")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="2" unique_id=654899524]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.30631244, 0.32622528, -0.0016479492)
+shape = SubResource("BoxShape3D_dg5dg")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="3" unique_id=994354963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0008239746, 0.32434082, -0.3116455)
+shape = SubResource("BoxShape3D_vvr1d")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." index="4" unique_id=797180620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0008239746, 0.33044434, 0.3082407)
+shape = SubResource("BoxShape3D_vvr1d")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="." index="5" unique_id=1400193607]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00061035156, 0.091918945, -0.0013427734)
+shape = SubResource("BoxShape3D_7ybfe")

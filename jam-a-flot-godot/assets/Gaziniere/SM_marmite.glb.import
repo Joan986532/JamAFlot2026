@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_marmite.glb-ddbc123eff74b5eccd3a04e3366132
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
