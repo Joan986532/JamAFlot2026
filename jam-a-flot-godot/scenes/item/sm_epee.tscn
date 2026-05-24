@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://hhjvi21yrwfj"]
 
 [ext_resource type="PackedScene" uid="uid://b4j66vw0b1p1s" path="res://assets/SM_epee.glb" id="1_oxvrm"]
+[ext_resource type="Texture2D" uid="uid://do2x40nr721hc" path="res://texture/epee/Sm_epee_T_epee_BaseColor.1001.png" id="2_bk2yy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5l6wy"]
+albedo_texture = ExtResource("2_bk2yy")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2jmq4"]
 radius = 0.033203125
@@ -11,6 +15,9 @@ radius = 0.025390625
 height = 0.29670715
 
 [node name="SM_epee" unique_id=765070861 instance=ExtResource("1_oxvrm")]
+
+[node name="SM_epee" parent="." index="0" unique_id=2105832774]
+surface_material_override/0 = SubResource("StandardMaterial3D_5l6wy")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=354274986]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.02358488, -0.020141602)

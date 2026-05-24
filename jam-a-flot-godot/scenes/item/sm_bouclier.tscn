@@ -1,11 +1,18 @@
 [gd_scene format=3 uid="uid://d4fv4rf0hhd47"]
 
 [ext_resource type="PackedScene" uid="uid://bjiwmxfi0s64y" path="res://assets/SM_bouclier.glb" id="1_nkkwi"]
+[ext_resource type="Texture2D" uid="uid://vnrr14sfj1fc" path="res://texture/bouclier/Sm_bouclier_T_bouclier_BaseColor.1001.png" id="2_3r10a"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pb7jo"]
+albedo_texture = ExtResource("2_3r10a")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0w826"]
 size = Vector3(0.50357056, 0.0871582, 0.868042)
 
 [node name="SM_bouclier" unique_id=1207173931 instance=ExtResource("1_nkkwi")]
+
+[node name="SM_bouclier" parent="." index="0" unique_id=701801333]
+surface_material_override/0 = SubResource("StandardMaterial3D_pb7jo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1095585998]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00010681152, 0.041870117, -0.0015258789)

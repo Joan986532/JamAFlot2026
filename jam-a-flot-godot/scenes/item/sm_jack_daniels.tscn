@@ -1,12 +1,19 @@
 [gd_scene format=3 uid="uid://c31me3lcilnbs"]
 
 [ext_resource type="PackedScene" uid="uid://bgokupsghw28f" path="res://assets/SM_jackDaniels.glb" id="1_yvehx"]
+[ext_resource type="Texture2D" uid="uid://cuwnda6omsb6y" path="res://texture/jackDaniel/Sm_jackDaniels_T_jackDaniels_BaseColor.1001.png" id="2_5qjjc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ymkm1"]
+albedo_texture = ExtResource("2_5qjjc")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_7oh3y"]
 height = 0.557251
 radius = 0.110839844
 
 [node name="SM_jackDaniels" unique_id=847523862 instance=ExtResource("1_yvehx")]
+
+[node name="SM_jackDaniels" parent="." index="0" unique_id=20018185]
+surface_material_override/0 = SubResource("StandardMaterial3D_ymkm1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=178899767]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.27941895, 0)

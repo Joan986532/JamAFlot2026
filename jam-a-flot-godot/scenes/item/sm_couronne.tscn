@@ -1,12 +1,19 @@
 [gd_scene format=3 uid="uid://bevysv1yge781"]
 
 [ext_resource type="PackedScene" uid="uid://5dktbw1bu4jw" path="res://assets/SM_couronne.glb" id="1_3ycd0"]
+[ext_resource type="Texture2D" uid="uid://jm26782hd5vw" path="res://texture/couronne/Sm_couronne_T_couronne_BaseColor.1001.png" id="2_b1usm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pdqip"]
+albedo_texture = ExtResource("2_b1usm")
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_5cj74"]
 height = 0.08950806
 radius = 0.10546875
 
 [node name="SM_couronne" unique_id=1985965725 instance=ExtResource("1_3ycd0")]
+
+[node name="SM_couronne" parent="." index="0" unique_id=1214855014]
+surface_material_override/0 = SubResource("StandardMaterial3D_pdqip")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1" unique_id=1359654475]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.045341015, 0)
