@@ -1,25 +1,22 @@
 [gd_scene format=3 uid="uid://c75jspcl0bnvr"]
 
 [ext_resource type="PackedScene" uid="uid://b3p2m0dswt7ss" path="res://scenes/room.tscn" id="1_0wfyh"]
-[ext_resource type="Script" uid="uid://ddxw0rnyxe6b7" path="res://scenes/main.gd" id="1_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://ce4vjqselp5eq" path="res://scenes/game_manager.tscn" id="1_tefeu"]
 [ext_resource type="PackedScene" uid="uid://b6vjg25xr4k6c" path="res://scenes/character.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://dwdcumhf4icr7" path="res://scenes/door.tscn" id="2_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://b72x6grkqaaoa" path="res://scenes/corridor.tscn" id="3_tefeu"]
-[ext_resource type="PackedScene" uid="uid://caa7c1rr8w5qa" path="res://scenes/cube.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://bdy600fx4bjx5" path="res://scenes/receptacle.tscn" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://cxr17ejgiwxuy" path="res://scenes/Medieval/baignoire.tscn" id="9_gqmmt"]
 [ext_resource type="PackedScene" uid="uid://cov1jyufohbve" path="res://scenes/Medieval/sm_toilette_med.tscn" id="11_jscy8"]
 [ext_resource type="PackedScene" uid="uid://cvhj3p320sq5f" path="res://scenes/Medieval/sm_tabouret_med.tscn" id="12_pm3ni"]
 [ext_resource type="PackedScene" uid="uid://y5f0w2tkubdm" path="res://scenes/Medieval/sm_coffre_medieval.tscn" id="14_og1vs"]
 [ext_resource type="PackedScene" uid="uid://couf0ia1jxwic" path="res://scenes/Medieval/sm_cheminee_med.tscn" id="15_2wyq8"]
+[ext_resource type="PackedScene" uid="uid://403guvksq1ja" path="res://scenes/Medieval/sm_table_chevet.tscn" id="15_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://rh6unc3icfux" path="res://scenes/Medieval/sm_canape_med.tscn" id="16_vxglm"]
 [ext_resource type="PackedScene" uid="uid://d1ps2bn54ujks" path="res://scenes/Medieval/sm_bureau_med.tscn" id="17_2f3dj"]
-[ext_resource type="PackedScene" uid="uid://6u3aus7k6mxo" path="res://scenes/Medieval/sm_table_med.tscn" id="17_muem4"]
 [ext_resource type="PackedScene" uid="uid://csu716r2h353t" path="res://scenes/Medieval/sm_bibliotheque_med.tscn" id="18_yq6so"]
 
 [node name="Node3D" type="Node3D" unique_id=523509601]
-script = ExtResource("1_tbgi4")
 
 [node name="game_manager" parent="." unique_id=1241329797 instance=ExtResource("1_tefeu")]
 unique_name_in_owner = true
@@ -49,13 +46,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0109563, -0.40317005, 0.672
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -10.288575)
 
 [node name="CharacterBody3D" parent="." unique_id=434899216 instance=ExtResource("2_sugp2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2117937, -5.216529)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.3705702, 1.2117937, -1.348912)
 
 [node name="Area3D" parent="." unique_id=303234696 instance=ExtResource("5_tbgi4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3475792, 0.870133, -2.0292368)
-
-[node name="RigidBody3D2" parent="." unique_id=256976419 instance=ExtResource("4_jyhfs")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.724212, 1.4566431, -0.22888708)
 
 [node name="SM_baignoirMed" parent="." unique_id=544532392 instance=ExtResource("9_gqmmt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.381154, -7.1525574e-05, 1.9632385)
@@ -81,5 +75,5 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.48
 [node name="SM_bibliothequeMed" parent="." unique_id=557939301 instance=ExtResource("18_yq6so")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.107554, -7.1507595e-05, -2.1684663)
 
-[node name="StaticBody3D" parent="." unique_id=1870553609 instance=ExtResource("17_muem4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25825357, -0.00049972534, -0.14252295)
+[node name="SM_tableChevet" parent="." unique_id=1527611603 instance=ExtResource("15_jkv2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67783564, -0.00049996376, 1.3978276)

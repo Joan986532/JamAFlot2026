@@ -3,17 +3,17 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://do0vryharty1l"
-path="res://.godot/imported/SM_tabouretMed.glb-64cf8fa88a3fba45d5a1da954d350339.scn"
+uid="uid://8cq6s6152rrr"
+path="res://.godot/imported/SM_bureauModerneTiroir.glb-ef8d50f8c5acf009a8a95e4c1d1129e7.scn"
 
 [deps]
 
-source_file="res://assets/SM_tabouretMed.glb"
-dest_files=["res://.godot/imported/SM_tabouretMed.glb-64cf8fa88a3fba45d5a1da954d350339.scn"]
+source_file="res://assets/Moderne/SM_bureauModerneTiroir.glb"
+dest_files=["res://.godot/imported/SM_bureauModerneTiroir.glb-ef8d50f8c5acf009a8a95e4c1d1129e7.scn"]
 
 [params]
 
-nodes/root_type="RigidBody3D"
+nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

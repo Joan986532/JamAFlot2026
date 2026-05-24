@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_buche.glb-ebe826bb718c9373d2b1a72a9ee684b8
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

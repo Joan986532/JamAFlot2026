@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_seauToiletteMed.glb-7f43910ac99729dc8b0bc5
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="RigidBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true

@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/SM_placard.glb-ede467b9202d4e70b5912a8b4515e1
 
 [params]
 
-nodes/root_type=""
+nodes/root_type="StaticBody3D"
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
