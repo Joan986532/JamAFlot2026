@@ -7,23 +7,31 @@
 script = ExtResource("1_hwd4i")
 
 [node name="success" type="Label" parent="." unique_id=811175770]
-visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -61.0
-offset_top = -24.5
-offset_right = 61.0
-offset_bottom = 24.5
+offset_left = -369.0
+offset_top = -167.0
+offset_right = 354.0
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 80
 text = "SUCCESS
-the futur is safe"
+THE FUTUR IS SAFE"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="esc menu" type="Label" parent="success" unique_id=1560114922]
+layout_mode = 0
+offset_left = 60.5
+offset_top = 225.5
+offset_right = 664.5
+offset_bottom = 275.5
+theme_override_font_sizes/font_size = 36
+text = "press [esc] to return to main menu"
 
 [node name="Failed" type="Label" parent="." unique_id=972731375]
 anchors_preset = -1
