@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://b72x6grkqaaoa"]
 
+[ext_resource type="PackedScene" uid="uid://bdy600fx4bjx5" path="res://scenes/receptacle.tscn" id="1_mj2as"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_f1tnb"]
 size = Vector3(16, 0.253, 5)
 
@@ -46,3 +48,6 @@ shape = SubResource("BoxShape3D_eom3m")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Wall_North" unique_id=1123299383]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -3)
 mesh = SubResource("BoxMesh_85yof")
+
+[node name="receptacle" parent="." unique_id=303234696 instance=ExtResource("1_mj2as")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009894609, 0.48678523, -0.08154321)

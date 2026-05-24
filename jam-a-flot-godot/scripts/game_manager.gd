@@ -1,15 +1,16 @@
 extends Node
 
-@onready var objective: Label = $Objective
 @onready var time_left: Label = $timeLeft
 @onready var failed: Label = $Failed
 @onready var to_restart: Label = $toRestart
 @onready var timer: Timer = $Timer
+@onready var success: Label = $success
 
 var time : int = 180
 
 func set_values():
 		failed.hide()
+		success.hide()
 		to_restart.hide()
 		time = 15
 		timer.start()
@@ -27,8 +28,14 @@ func _on_timer_timeout() -> void:
 		failed.show()
 		to_restart.show()
 
-func _process(delta: float) -> void:
-	if time == 0 && Input.is_action_just_pressed("restart"):
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("menu"):
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		get_tree().change_scene_to_file("res://scenes/Titlescreen.tscn")
+	if time == 0 and Input.is_action_just_pressed("restart"):
 		set_values()
 		time_left.text = ""
 		get_tree().reload_current_scene()
+	if Global.score == 1 and time != 0:
+		timer.stop()
+		success.show()

@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dwdcumhf4icr7" path="res://scenes/door.tscn" id="2_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://b72x6grkqaaoa" path="res://scenes/corridor.tscn" id="3_tefeu"]
 [ext_resource type="PackedScene" uid="uid://bdy600fx4bjx5" path="res://scenes/receptacle.tscn" id="5_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://caa7c1rr8w5qa" path="res://scenes/cube.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://cxr17ejgiwxuy" path="res://scenes/Medieval/baignoire.tscn" id="9_gqmmt"]
 [ext_resource type="PackedScene" uid="uid://cov1jyufohbve" path="res://scenes/Medieval/sm_toilette_med.tscn" id="11_jscy8"]
 [ext_resource type="PackedScene" uid="uid://cvhj3p320sq5f" path="res://scenes/Medieval/sm_tabouret_med.tscn" id="12_pm3ni"]
@@ -19,7 +20,6 @@
 [node name="Node3D" type="Node3D" unique_id=523509601]
 
 [node name="game_manager" parent="." unique_id=1241329797 instance=ExtResource("1_tefeu")]
-unique_name_in_owner = true
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1570300939]
 transform = Transform3D(-0.97677726, -0.029975878, 0.21215022, 0.21185778, 0.012652889, 0.9772186, -0.031977296, 0.9994706, -0.006008431, 7.3411217, 8.632092, -2.7457397)
@@ -48,8 +48,8 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0
 [node name="CharacterBody3D" parent="." unique_id=434899216 instance=ExtResource("2_sugp2")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.3705702, 1.2117937, -1.348912)
 
-[node name="Area3D" parent="." unique_id=303234696 instance=ExtResource("5_tbgi4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3475792, 0.870133, -2.0292368)
+[node name="SP_epee" parent="." unique_id=256976419 instance=ExtResource("4_jyhfs")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.724212, 1.4566431, -0.22888708)
 
 [node name="SM_baignoirMed" parent="." unique_id=544532392 instance=ExtResource("9_gqmmt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.381154, -7.1525574e-05, 1.9632385)
@@ -77,3 +77,8 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.10
 
 [node name="SM_tableChevet" parent="." unique_id=1527611603 instance=ExtResource("15_jkv2x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67783564, -0.00049996376, 1.3978276)
+[node name="StaticBody3D" parent="." unique_id=1870553609 instance=ExtResource("17_muem4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25825357, -0.00049972534, -0.14252295)
+
+[node name="SP_2" parent="." unique_id=1282383468 instance=ExtResource("4_jyhfs")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.42215586, 2.1849647, -0.34333062)

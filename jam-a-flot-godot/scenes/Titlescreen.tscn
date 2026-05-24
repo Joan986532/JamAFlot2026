@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cp87y47bye5v4"]
+
+[ext_resource type="Script" uid="uid://bvcqvix4w30iv" path="res://scenes/titlescreen.gd" id="1_r0gry"]
+
+[node name="Control" type="Control" unique_id=1209680522]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r0gry")
+
+[node name="Title" type="Label" parent="." unique_id=2082428163]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -118.5
+offset_top = 99.0
+offset_right = 118.5
+offset_bottom = 209.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 80
+text = "LE JEU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quit" type="Button" parent="." unique_id=398793594]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = 55.0
+offset_right = 225.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "QUIT"
+
+[node name="Play" type="Button" parent="." unique_id=605637486]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -75.0
+offset_right = 225.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "PLAY"
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
