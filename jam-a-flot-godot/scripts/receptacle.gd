@@ -1,5 +1,6 @@
 extends Area3D
-@onready var game_manager: Node = %game_manager
+
+@onready var game_manager: Node = $"../../game_manager"
 @onready var sword_valid: TextureRect = game_manager.get_node("SwordValid")
 @onready var bouclier_valid: TextureRect = game_manager.get_node("BouclierValid")
 @onready var couronne_valid: TextureRect = game_manager.get_node("CouronneValid")
@@ -42,4 +43,3 @@ func _on_body_exited(body: Node3D) -> void:
 		bouteille_valid.visible = false
 	if(body.name.begins_with("SP_telephone")):
 		telephone_valid.visible = false
-
