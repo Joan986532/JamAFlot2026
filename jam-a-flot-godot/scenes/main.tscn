@@ -16,12 +16,30 @@
 [ext_resource type="PackedScene" uid="uid://fywc3vxku4un" path="res://scenes/Medieval/sm_lit_med.tscn" id="14_gqmmt"]
 [ext_resource type="PackedScene" uid="uid://y5f0w2tkubdm" path="res://scenes/Medieval/sm_coffre_medieval.tscn" id="14_og1vs"]
 [ext_resource type="PackedScene" uid="uid://couf0ia1jxwic" path="res://scenes/Medieval/sm_cheminee_med.tscn" id="15_2wyq8"]
-[ext_resource type="PackedScene" uid="uid://403guvksq1ja" path="res://scenes/Medieval/sm_table_chevet.tscn" id="15_jkv2x"]
+[ext_resource type="PackedScene" uid="uid://d3q6qo7bk0562" path="res://scenes/Actuel/baignoire.tscn" id="16_muem4"]
 [ext_resource type="PackedScene" uid="uid://rh6unc3icfux" path="res://scenes/Medieval/sm_canape_med.tscn" id="16_vxglm"]
 [ext_resource type="PackedScene" uid="uid://d1ps2bn54ujks" path="res://scenes/Medieval/sm_bureau_med.tscn" id="17_2f3dj"]
+[ext_resource type="PackedScene" uid="uid://ds1ytj1i2ogca" path="res://scenes/Actuel/sm_bibliotehque.tscn" id="17_dp3eg"]
+[ext_resource type="PackedScene" uid="uid://6u3aus7k6mxo" path="res://scenes/Medieval/sm_table_med.tscn" id="17_muem4"]
+[ext_resource type="PackedScene" uid="uid://e0w1w2jkndss" path="res://scenes/Actuel/chaise.tscn" id="17_yq6so"]
+[ext_resource type="PackedScene" uid="uid://bjggiiwpimvvu" path="res://scenes/Actuel/fautail.tscn" id="18_fv21b"]
+[ext_resource type="PackedScene" uid="uid://csu716r2h353t" path="res://scenes/Medieval/sm_bibliotheque_med.tscn" id="18_yq6so"]
+[ext_resource type="PackedScene" uid="uid://bhweo3at2wwcx" path="res://scenes/Actuel/sm_bureau_2.tscn" id="20_tel4y"]
+[ext_resource type="PackedScene" uid="uid://bwdf5xwrrm75j" path="res://scenes/Actuel/sm_canape_moderne_2.tscn" id="21_qkpxi"]
+[ext_resource type="PackedScene" uid="uid://biwoxnqph7nyq" path="res://scenes/Actuel/sm_frigo_moderne.tscn" id="22_5q0nq"]
+[ext_resource type="PackedScene" uid="uid://858a14f0tp1e" path="res://scenes/Actuel/sm_gaziniere_moderne.tscn" id="23_dgi5k"]
+[ext_resource type="PackedScene" uid="uid://dkaw1sjeju10v" path="res://scenes/Actuel/sm_lavabo_moderne.tscn" id="24_j8jky"]
+[ext_resource type="PackedScene" uid="uid://djrdypy0ai6xx" path="res://scenes/Actuel/sm_lit_moderne.tscn" id="25_kmb1v"]
+[ext_resource type="PackedScene" uid="uid://de5xmvi6vpyu4" path="res://scenes/Actuel/sm_poele_granule_2.tscn" id="26_fuf3a"]
+[ext_resource type="PackedScene" uid="uid://b7sftpc86qggm" path="res://scenes/Actuel/sm_table_moderne.tscn" id="27_pibwh"]
+[ext_resource type="PackedScene" uid="uid://rn0qr4smmlb6" path="res://scenes/Actuel/sm_toilet_moderne.tscn" id="28_c6pm6"]
+[ext_resource type="PackedScene" uid="uid://qsbj6vtcm0be" path="res://scenes/Actuel/sm_placard.tscn" id="29_qkpxi"]
+[ext_resource type="PackedScene" uid="uid://cr87chiw5amk" path="res://scenes/Actuel/sm_plan_travail_2.tscn" id="30_5q0nq"]
+[ext_resource type="PackedScene" uid="uid://bld324ofy34jh" path="res://scenes/Actuel/sm_table_chevet.tscn" id="31_dgi5k"]
+[ext_resource type="PackedScene" uid="uid://81bs8cm0fo2" path="res://scenes/Actuel/sm_meuble_sdb_2.tscn" id="32_j8jky"]
+[ext_resource type="PackedScene" uid="uid://403guvksq1ja" path="res://scenes/Medieval/sm_table_chevet.tscn" id="15_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://ccfx8g18jrxgb" path="res://scenes/Medieval/sm_marmite_med.tscn" id="17_yc10j"]
 [ext_resource type="PackedScene" uid="uid://ddia7sbjprl4d" path="res://scenes/Medieval/sm_placard.tscn" id="18_jscy8"]
-[ext_resource type="PackedScene" uid="uid://csu716r2h353t" path="res://scenes/Medieval/sm_bibliotheque_med.tscn" id="18_yq6so"]
 [ext_resource type="PackedScene" uid="uid://cjc5qb1pvtnqd" path="res://scenes/Medieval/sm_lavabo_med.tscn" id="20_y6deb"]
 [ext_resource type="PackedScene" uid="uid://kwoy22tj4a12" path="res://scenes/Medieval/sm_meuble_sdb.tscn" id="22_og1vs"]
 
@@ -110,6 +128,80 @@ transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 5.3280888, 0, 1.4622908
 [node name="SM_toiletteMed" parent="Room" unique_id=2025288450 instance=ExtResource("11_jscy8")]
 transform = Transform3D(-5.2453668e-08, 0, -1.2, 0, 1.2, 0, 1.2, 0, -5.2453668e-08, -5.232244, 0, 2.270134)
 
+[node name="SP_2" parent="." unique_id=1282383468 instance=ExtResource("4_jyhfs")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.42215586, 2.1849647, -0.34333062)
+
+[node name="StaticBody3D2" parent="." unique_id=2107471854 instance=ExtResource("16_muem4")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.846968, -0.002178669, -18.760798)
+
+[node name="RigidBody3D" parent="." unique_id=2123355289 instance=ExtResource("17_yq6so")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.3861182, -0.00049972534, -19.073635)
+
+[node name="RigidBody3D2" parent="." unique_id=1955430631 instance=ExtResource("18_fv21b")]
+transform = Transform3D(-0.6128356, 0, 0.51423013, 0, 0.8, 0, -0.51423013, 0, -0.6128356, -3.4123878, -0.00049972534, -18.45819)
+
+[node name="SM_bibliotehque" parent="." unique_id=589598432 instance=ExtResource("17_dp3eg")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.7086265, 0.0012820434, -19.037384)
+
+[node name="SM_bureauModerne" parent="." unique_id=1633952677 instance=ExtResource("20_tel4y")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2.505991, 0.023080291, -18.469381)
+
+[node name="SM_canapeModerne2" parent="." unique_id=248325332 instance=ExtResource("21_qkpxi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.4744582, -0.00049972534, -19.108871)
+
+[node name="SM_frigoModerne" parent="." unique_id=2119488564 instance=ExtResource("22_5q0nq")]
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, 1.9843507, -0.0004992485, -22.746504)
+
+[node name="SM_gaziniereModerne" parent="." unique_id=697589032 instance=ExtResource("23_dgi5k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.9682317, -0.00049964903, -22.71882)
+
+[node name="SM_lavaboModerne" parent="." unique_id=2098814940 instance=ExtResource("24_j8jky")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.4888606, -0.00049972534, -20.048712)
+
+[node name="SM_litModerne" parent="." unique_id=1831750779 instance=ExtResource("25_kmb1v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9783893, 0.005853634, -19.190704)
+
+[node name="SM_poeleGranule2" parent="." unique_id=263630063 instance=ExtResource("26_fuf3a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.6511586, -0.00049972534, -19.424723)
+
+[node name="SM_tableModerne" parent="." unique_id=192928621 instance=ExtResource("27_pibwh")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -2.1590536, -0.0004992485, -21.879728)
+
+[node name="RigidBody3D3" parent="." unique_id=344530772 instance=ExtResource("17_yq6so")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.298736, -0.0005002022, -21.49787)
+
+[node name="RigidBody3D4" parent="." unique_id=1451102402 instance=ExtResource("17_yq6so")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.2813482, -0.00049972534, -21.955025)
+
+[node name="RigidBody3D5" parent="." unique_id=319701590 instance=ExtResource("17_yq6so")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -2.2167492, -0.00049972534, -22.376972)
+
+[node name="RigidBody3D6" parent="." unique_id=2134223456 instance=ExtResource("17_yq6so")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -3.1959872, -0.00049972534, -22.025126)
+
+[node name="SM_toiletModerne" parent="." unique_id=605102970 instance=ExtResource("28_c6pm6")]
+transform = Transform3D(-5.2453668e-08, 0, -1.2, 0, 1.2, 0, 1.2, 0, -5.2453668e-08, 4.2971783, -0.00049972534, -22.228018)
+
+[node name="SM_placard" parent="." unique_id=1570081231 instance=ExtResource("29_qkpxi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.287443, -0.00049972534, -21.759846)
+
+[node name="SM_placard2" parent="." unique_id=693823990 instance=ExtResource("29_qkpxi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -7.464841, -0.00049972534, -22.868946)
+
+[node name="SM_placard3" parent="." unique_id=209699093 instance=ExtResource("29_qkpxi")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -6.206432, -0.00049972534, -22.909336)
+
+[node name="SM_planTravail2" parent="." unique_id=1144690685 instance=ExtResource("30_5q0nq")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 3.484872, -0.00049972534, -22.103392)
+
+[node name="SM_tableChevet" parent="." unique_id=2037161338 instance=ExtResource("31_dgi5k")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.269262, -0.00049972534, -18.260658)
+
+[node name="SM_tableChevet2" parent="." unique_id=2141741892 instance=ExtResource("31_dgi5k")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -5.7016344, -0.0012078285, -18.3567)
+
+[node name="SM_meubleSDB2" parent="." unique_id=954909558 instance=ExtResource("32_j8jky")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 7.3619266, -0.00049971044, -21.579647)
 [node name="SM_lavaboMed" parent="Room" unique_id=2030720357 instance=ExtResource("20_y6deb")]
 transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -7.167677, 0, 0)
 

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://e0w1w2jkndss"]
+
+[ext_resource type="PackedScene" uid="uid://d8upqrixhmlb" path="res://assets/Moderne/SM_chaiseBureauModerne.glb" id="1_mop0h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qqetq"]
+size = Vector3(0.43707275, 0.9050598, 0.5593262)
+
+[node name="RigidBody3D" type="RigidBody3D" unique_id=2123355289]
+
+[node name="SM_chaiseBureauModerne" parent="." unique_id=1131684653 instance=ExtResource("1_mop0h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03712833, 0, 0.10932231)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1257299299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035491943, 0.44743347, 0.17272949)
+shape = SubResource("BoxShape3D_qqetq")

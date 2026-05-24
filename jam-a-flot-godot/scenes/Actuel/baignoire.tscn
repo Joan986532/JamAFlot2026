@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d3q6qo7bk0562"]
+
+[ext_resource type="PackedScene" uid="uid://q2dayrf17fsr" path="res://assets/Moderne/SM_baignoire.glb" id="1_5w7px"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mpifc"]
+size = Vector3(0.82421875, 0.6312866, 1.7993774)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=2107471854]
+
+[node name="SM_baignoire2" parent="." unique_id=397359864 instance=ExtResource("1_5w7px")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03919995, 0, 0.15373087)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1378821349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.040039063, 0.31314087, 0.20004272)
+shape = SubResource("BoxShape3D_mpifc")
