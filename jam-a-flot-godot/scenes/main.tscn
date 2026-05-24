@@ -77,8 +77,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.10
 
 [node name="SM_tableChevet" parent="." unique_id=1527611603 instance=ExtResource("15_jkv2x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.67783564, -0.00049996376, 1.3978276)
-[node name="StaticBody3D" parent="." unique_id=1870553609 instance=ExtResource("17_muem4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25825357, -0.00049972534, -0.14252295)
+
 
 [node name="SP_2" parent="." unique_id=1282383468 instance=ExtResource("4_jyhfs")]
 transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0.42215586, 2.1849647, -0.34333062)
