@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dwdcumhf4icr7"]
 
+[ext_resource type="Texture2D" uid="uid://dprbjb58eqblr" path="res://texture/plafond/Sm_plafond_lambert1_BaseColor.1001.png" id="1_hpvv5"]
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5f452"]
 points = PackedVector3Array(-0.09, -1.05, -0.075, -0.09, -1.05, 0.075, -0.09, 1.05, -0.075, 0.09, -1.05, -0.075, 0.09, -1.05, 0.075, -0.09, 1.05, 0.075, 0.09, 1.05, -0.075, 0.09, 1.05, 0.075)
 
@@ -7,7 +9,7 @@ points = PackedVector3Array(-0.09, -1.05, -0.075, -0.09, -1.05, 0.075, -0.09, 1.
 size = Vector3(0.15, 1.98, 0.98)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ekmla"]
-albedo_color = Color(1, 0, 1, 1)
+albedo_texture = ExtResource("1_hpvv5")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5f452"]
 size = Vector3(0.15, 1.904729, 0.80441403)
