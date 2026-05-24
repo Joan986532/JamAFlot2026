@@ -1,6 +1,5 @@
 extends Node
 
-@onready var objective: Label = $Objective
 @onready var time_left: Label = $timeLeft
 @onready var failed: Label = $Failed
 @onready var to_restart: Label = $toRestart
